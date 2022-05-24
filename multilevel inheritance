@@ -1,0 +1,32 @@
+//multilevel inheritance
+
+class a
+{
+    int a=10;
+    void display()
+    {
+        System.out.println("hi");
+    }
+}
+class b extends a
+{
+    int b=20;
+}
+class c extends b
+{
+    int c=30;
+    void add()
+    {
+          System.out.println(a+b+c);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+       c x=new c();
+       x.display();
+       x.add();
+    }
+}
+/*
+hi60*/
