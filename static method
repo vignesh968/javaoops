@@ -1,0 +1,22 @@
+
+public class Main
+{ static
+{
+    System.out.println("static 1");
+}
+    
+	public static void main(String[] args) {
+	System.out.println("main method");
+	m1();
+	}
+	static void m1(){
+	    System.out.println("static 2");
+	}
+	
+}
+
+/*
+static 1
+main method
+static 2
+*/
