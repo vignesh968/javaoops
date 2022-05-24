@@ -1,0 +1,33 @@
+//multiple inheritance
+//same method name
+class a
+{
+    int a=10;
+    void display()
+    {
+        System.out.println("hi");
+    }
+}
+class b
+{
+    int b=20;
+    void display()
+    {
+        System.out.println("hello");
+    }
+}
+class c extends a,b
+{
+    
+    int c=30;
+    void display()
+    {super.display();
+          System.out.println(a+c);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       c x=new c();
+       x.display();
+    }
+}
