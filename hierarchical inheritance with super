@@ -1,0 +1,36 @@
+//hierarcinheritance
+//same method name
+class a
+{
+    int a=10;
+    void display()
+    {
+        System.out.println("hi");
+    }
+}
+class b extends a
+{
+    int b=20;
+}
+class c extends a
+{
+    
+    int c=30;
+    void display()
+    {super.display();
+          System.out.println(a+c);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+       c x=new c();
+       x.display();
+    }
+}
+/*
+super call the parent class
+*/
+/*
+hi
+40
+*/
